@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:open_fashion_with_clean_code/common/routes/routes.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -19,6 +20,8 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             title: "Open Fashion",
             theme: ThemeData.light(useMaterial3: true),
+            initialRoute: homeRoute,
+            routes: appRoutes,
           );
         });
   }
