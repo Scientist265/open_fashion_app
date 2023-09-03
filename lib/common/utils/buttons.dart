@@ -8,18 +8,20 @@ GestureDetector button({required onTap}) {
   return GestureDetector(
     onTap: onTap,
     child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.0.w, vertical: 30.h),
-            child: Align(
-              alignment: Alignment.bottomCenter,
-              child: Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 7),
-                decoration: BoxDecoration(
-                    color: AppColors.klabelColor,
-                    borderRadius: const BorderRadius.all(Radius.circular(30))),
-                child: const SubTitleText(text: "Explore Collection"),
-              ),
-            ),
-          ),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+      child: Align(
+        alignment: Alignment.bottomCenter,
+        child: Container(
+          height: 40.h,
+          width: double.infinity,
+          margin: EdgeInsets.symmetric(horizontal: 20.w),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 7),
+          decoration: BoxDecoration(
+              color: AppColors.klabelColor,
+              borderRadius: const BorderRadius.all(Radius.circular(30))),
+          child: const SubTitleText(text: "Explore Collection"),
+        ),
+      ),
+    ),
   );
 }

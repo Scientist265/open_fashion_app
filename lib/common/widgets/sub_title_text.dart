@@ -9,10 +9,12 @@ class SubTitleText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      text.toUpperCase(),
-      style: AppTextTheme.ksubHeaderStyle
-          .copyWith(color: color ?? AppColors.kBackgroundColor),
+    return Center(
+      child: Text(
+        text.toUpperCase(),
+        style: AppTextTheme.ksubHeaderStyle
+            .copyWith(color: color ?? AppColors.kBackgroundColor),
+      ),
     );
   }
 }

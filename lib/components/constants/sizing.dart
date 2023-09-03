@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppSizing {
-  AppSizing._();
+ 
   Widget heightSpacer(double height) {
     return SizedBox(
       height: height,
